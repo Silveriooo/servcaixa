@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    {% if current_user.is_authenticated %}
+        <h1>Supermercado Oriente</h1>
+        <h2>Bem-vindo! {{ current_user.name }}</h2>
+    {% else %}
+        <h1>Supermercado Oriente</h1>
+        <h2>Bem-vindo!</h2>
+        <h6><a href="/login">Entrar no sistema</a></h6>
+    {% endif %} 
+</div>
+{% endblock %}

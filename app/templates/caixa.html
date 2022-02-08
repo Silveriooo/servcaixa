@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServCaixa</title>
+<style>
+    body {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .corpo {
+        background-color: green;
+        color: white;
+    }
+
+    .valores div {
+        display: inline-block;
+        margin-top: 4px;
+    }
+    .valores label {
+        font-size: 1.3rem;
+    }
+
+    .valores input {
+        font-size: 1.5rem;
+        border-radius: 6px;
+        padding: 4px;
+    }
+
+    .descricao label {
+        font-size: 1.3rem;
+    }
+
+    .descricao input {
+        font-size: 1rem;
+        border-radius: 6px;
+        padding: 4px;
+        height: 60px;
+        width: 98.5%;
+        overflow-y: auto;
+    }
+
+    .esquerda {
+        height: 200px;
+        width: 25%;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .lista div {
+        display: inline-block;
+    }
+    
+    .direita {
+        margin-top: 10px;
+        height: 240px;
+        width: 72.8%;
+        border: 6px solid darkgray;
+        border-radius: 15px;
+        background-color: snow;
+        color: black;
+    }
+</style>
+</head>
+<body class="corpo">
+    <div class="valores">
+        <div>
+            <label for="codigo">Código</label><br>
+            <input type="text" name="codigo" size="18" autofocus>   
+        </div>
+        <div>
+            <label for="quantidade">Quantidade</label><br>
+        <input type="text" name="quantidade" size="8">
+        </div>
+        <div>
+            <label for="valor_unitario">Preço Unitário</label><br>
+        <input type="text" name="valor_unitario" size="18">
+        </div>
+        <div>
+            <label for="total_item">Total Item</label><br>
+        <input type="text" name="total_item" size="18">
+        </div>
+    </div>
+    <div class="descricao">
+        <label for="descricao">Descrição</label><br>
+        <input type="text" name="descricao">
+    </div>
+    <div class="lista">
+        <div class="esquerda"><h2></h2></div>
+        <div class="direita"></div>
+    </div>
+    <div class="avisos">baixo esquerda</div>
+    <div class="total">baixo direita</div>
+</body>
+</html>
